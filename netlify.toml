@@ -1,0 +1,7 @@
+[build]
+  command = "pnpm install --ignore-scripts && pnpm --filter @workspace/dutta-ayurveda-clinic build"
+  publish = "artifacts/dutta-ayurveda-clinic/dist/public"
+
+[build.environment]
+  NODE_VERSION = "22"
+  PNPM_VERSION = "11.6.0"
