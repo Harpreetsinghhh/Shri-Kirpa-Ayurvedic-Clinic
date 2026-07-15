@@ -155,16 +155,16 @@ importers:
   .:
     devDependencies:
       '@esbuild/win32-x64':
-        specifier: ^0.27.3
+        specifier: 0.27.3
         version: 0.27.3
       '@rollup/rollup-win32-x64-msvc':
-        specifier: ^4.62.2
+        specifier: 4.62.2
         version: 4.62.2
       '@tailwindcss/oxide-win32-x64-msvc':
-        specifier: ^4.3.2
+        specifier: 4.3.2
         version: 4.3.2
       lightningcss-win32-x64-msvc:
-        specifier: ^1.32.0
+        specifier: 1.32.0
         version: 1.32.0
       prettier:
         specifier: ^3.9.4

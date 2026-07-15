@@ -1,5 +1,5 @@
 [build]
-  command = "pnpm install --ignore-scripts && pnpm --filter @workspace/dutta-ayurveda-clinic build"
+  command = "pnpm install && pnpm --filter @workspace run build"
   publish = "artifacts/dutta-ayurveda-clinic/dist/public"
 
 [build.environment]
