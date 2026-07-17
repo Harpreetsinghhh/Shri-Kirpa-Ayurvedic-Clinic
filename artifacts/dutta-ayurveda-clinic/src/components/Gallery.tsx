@@ -1,16 +1,34 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ZoomIn } from 'lucide-react';
 
 const images = [
-  { src: '/gallery-1.jpg', alt: 'Shirodhara treatment', col: 'col-span-1', row: 'row-span-2' },
-  { src: '/gallery-2.jpg', alt: 'Ayurvedic herbs', col: 'col-span-1 md:col-span-2', row: 'row-span-1' },
-  { src: '/about-image.jpg', alt: 'Clinic Interior', col: 'col-span-1', row: 'row-span-1' },
-  { src: '/gallery-3.jpg', alt: 'Consultation room', col: 'col-span-1 md:col-span-2', row: 'row-span-1' },
+  { src: '/gallery-1.jpg', alt: 'Shirodhara treatment', desktopClass: 'md:col-span-1 md:row-span-2' },
+  { src: '/gallery-2.jpg', alt: 'Ayurvedic herbs', desktopClass: 'md:col-span-2 md:row-span-1' },
+  { src: '/about-image.jpg', alt: 'Clinic Interior', desktopClass: 'md:col-span-1 md:row-span-1' },
+  { src: '/gallery-3.jpg', alt: 'Consultation room', desktopClass: 'md:col-span-1 md:row-span-1' },
 ];
 
 export function Gallery() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  // Close on Escape, and lock body scroll while the lightbox is open
+  useEffect(() => {
+    if (!selectedImage) return;
+
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setSelectedImage(null);
+    };
+
+    document.addEventListener('keydown', onKeyDown);
+    const originalOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+
+    return () => {
+      document.removeEventListener('keydown', onKeyDown);
+      document.body.style.overflow = originalOverflow;
+    };
+  }, [selectedImage]);
 
   return (
     <section id="gallery" className="py-24 lg:py-32 bg-background">
@@ -24,7 +42,13 @@ export function Gallery() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 grid-rows-2 gap-4 h-[800px]">
+        {/*
+          Mobile: simple single-column stack, auto height, each image gets a fixed
+          aspect ratio so the page doesn't jump as images load.
+          Desktop (md+): true 3-col x 2-row bento grid. The four spans below add up
+          to exactly 6 cells (2 + 2 + 1 + 1), so nothing overflows into a 3rd row.
+        */}
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:grid-rows-2 md:h-[800px]">
           {images.map((img, idx) => (
             <motion.div
               key={img.src}
@@ -32,12 +56,12 @@ export function Gallery() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1, duration: 0.6 }}
-              className={`relative rounded-2xl overflow-hidden group cursor-pointer ${img.col} ${img.row}`}
+              className={`relative rounded-2xl overflow-hidden group cursor-pointer aspect-[4/3] md:aspect-auto ${img.desktopClass}`}
               onClick={() => setSelectedImage(img.src)}
             >
-              <img 
-                src={img.src} 
-                alt={img.alt} 
+              <img
+                src={img.src}
+                alt={img.alt}
                 loading="lazy"
                 decoding="async"
                 draggable={false}
@@ -55,25 +79,26 @@ export function Gallery() {
 
       <AnimatePresence>
         {selectedImage && (
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={() => setSelectedImage(null)}
             className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-4 cursor-zoom-out"
           >
-            <button 
+            <button
               className="absolute top-6 right-6 text-white/70 hover:text-white p-2"
               onClick={(e) => { e.stopPropagation(); setSelectedImage(null); }}
+              aria-label="Close image"
             >
               <X size={32} />
             </button>
-            <motion.img 
+            <motion.img
               initial={{ scale: 0.9 }}
               animate={{ scale: 1 }}
               exit={{ scale: 0.9 }}
-              src={selectedImage} 
-              alt="Enlarged gallery image" 
+              src={selectedImage}
+              alt="Enlarged gallery image"
               className="max-w-full max-h-[90vh] rounded-lg object-contain shadow-2xl"
               onClick={(e) => e.stopPropagation()}
             />
