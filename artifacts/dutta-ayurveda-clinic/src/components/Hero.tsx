@@ -266,23 +266,22 @@ export function Hero() {
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
-              
-              {/* Floating badges */}
-              <motion.div 
-                animate={{ y: [-10, 10, -10] }}
-                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute top-10 -right-20 bg-card/90 backdrop-blur-md px-6 py-4 rounded-2xl shadow-lg border border-border/50 flex items-center gap-4"
-              >
-                <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center">
-                  <Leaf className="text-accent" size={24} />
-                </div>
-                <div>
-                  <p className="text-sm text-muted-foreground font-medium">Authentic</p>
-                  <p className="text-foreground font-serif font-semibold">Panchakarma</p>
-                </div>
-              </motion.div>
-              
             </div>
+
+            {/* Floating badge — sits outside the overflow-hidden image wrapper so it never gets clipped, with responsive offset/sizing */}
+            <motion.div 
+              animate={{ y: [-10, 10, -10] }}
+              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+              className="absolute top-4 right-2 sm:top-10 sm:-right-6 lg:-right-16 bg-card/90 backdrop-blur-md px-4 sm:px-6 py-3 sm:py-4 rounded-2xl shadow-lg border border-border/50 flex items-center gap-3 sm:gap-4 max-w-[calc(100%-1rem)] sm:max-w-none"
+            >
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
+                <Leaf className="text-accent" size={18} />
+              </div>
+              <div className="min-w-0">
+                <p className="text-xs sm:text-sm text-muted-foreground font-medium leading-tight">Authentic</p>
+                <p className="text-foreground font-serif font-semibold text-sm sm:text-base leading-tight whitespace-nowrap">Panchakarma</p>
+              </div>
+            </motion.div>
             
             {/* Decorative background element */}
             <div className="absolute -inset-4 border border-primary/20 rounded-[2.5rem] -z-10 transform rotate-3" />
