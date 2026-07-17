@@ -271,7 +271,7 @@ export function Hero() {
               <motion.div 
                 animate={{ y: [-10, 10, -10] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute top-10 -right-10 bg-card/90 backdrop-blur-md px-6 py-4 rounded-2xl shadow-lg border border-border/50 flex items-center gap-4"
+                className="absolute top-10 -right-20 bg-card/90 backdrop-blur-md px-6 py-4 rounded-2xl shadow-lg border border-border/50 flex items-center gap-4"
               >
                 <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center">
                   <Leaf className="text-accent" size={24} />
