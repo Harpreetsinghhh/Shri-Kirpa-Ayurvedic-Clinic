@@ -261,7 +261,7 @@ export function Hero() {
           >
             <div className="aspect-[4/5] rounded-[2rem] overflow-hidden relative shadow-2xl">
               <img 
-                src="/hero-doctor.png" 
+                src="/hero-doctor.jpg" 
                 alt="Ayurvedic Doctor" 
                 className="w-full h-full object-cover"
               />
