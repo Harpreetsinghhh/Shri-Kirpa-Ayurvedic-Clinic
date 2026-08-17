@@ -56,7 +56,7 @@ export function About() {
               
               <div className="space-y-6 text-foreground/80 leading-relaxed text-base sm:text-lg">
                 <p>
-                  At Dutta Ayurveda Clinic, we believe that true health is not merely the absence of disease, but a state of absolute physical, mental, and spiritual well-being.
+                  At Shri Kirpa Ayurvedic Clinic, we believe that true health is not merely the absence of disease, but a state of absolute physical, mental, and spiritual well-being.
                 </p>
                 <p>
                   For over 15 years, we have been dedicated to treating the root cause of ailments rather than just the symptoms. Our approach combines ancient Ayurvedic wisdom with a refined, modern clinical practice to provide personalized healing protocols.

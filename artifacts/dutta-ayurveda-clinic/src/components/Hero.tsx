@@ -239,7 +239,7 @@ export function Hero() {
               </button>
               
               <a 
-                href="tel:+919872870081"
+                href="tel:+919877892649"
                 className="group flex items-center justify-center gap-3 px-8 py-4 rounded-full border border-border bg-card/50 backdrop-blur-sm text-foreground hover:border-primary/50 transition-colors duration-300"
               >
                 <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
@@ -247,7 +247,7 @@ export function Hero() {
                 </div>
                 <div className="flex flex-col items-start">
                   <span className="text-xs text-muted-foreground uppercase tracking-wider">Call Now</span>
-                  <span className="font-mono font-medium">+91 9872870081</span>
+                  <span className="font-mono font-medium">+91 9877892649</span>
                 </div>
               </a>
             </motion.div>

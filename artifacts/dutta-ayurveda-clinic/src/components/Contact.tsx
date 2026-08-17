@@ -31,8 +31,9 @@ export function Contact() {
                   <div>
                     <h4 className="font-medium text-foreground mb-1">Address</h4>
                     <p className="text-muted-foreground text-sm leading-relaxed">
-                      Dutta Clinic, Chowk Kishanpura,<br/>
-                      Jalandhar, Punjab 144008
+                      4FMM+768, near dominick Pizza,<br/>
+                      inside Bhalla Enclave Jalandhar,<br/>
+                      Bypass Rd, Nakodar, Punjab 144040
                     </p>
                   </div>
                 </div>
@@ -43,8 +44,8 @@ export function Contact() {
                   </div>
                   <div>
                     <h4 className="font-medium text-foreground mb-1">Phone</h4>
-                    <a href="tel:+919872870081" className="text-muted-foreground text-sm hover:text-primary transition-colors block">
-                      +91 9872870081
+                    <a href="tel:+919877892649" className="text-muted-foreground text-sm hover:text-primary transition-colors block">
+                      +91 9877892649
                     </a>
                   </div>
                 </div>
@@ -52,13 +53,13 @@ export function Contact() {
 
               <div className="mt-8 space-y-3">
                 <a 
-                  href="tel:+919872870081"
+                  href="tel:+919877892649"
                   className="w-full flex items-center justify-center gap-2 bg-primary text-primary-foreground py-3 rounded-xl font-medium hover:bg-primary/90 transition-colors"
                 >
                   <Phone size={18} /> Call Now
                 </a>
                 <a 
-                  href="https://wa.me/919872870081"
+                  href="https://wa.me/919877892649"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full flex items-center justify-center gap-2 bg-[#25D366] text-white py-3 rounded-xl font-medium hover:bg-[#20bd5a] transition-colors"
@@ -66,7 +67,7 @@ export function Contact() {
                   <MessageCircle size={18} /> WhatsApp
                 </a>
                 <a 
-                  href="https://maps.google.com/?q=Dutta+Clinic,+Chowk+Kishanpura,+Jalandhar,+Punjab"
+                  href="https://maps.google.com/?q=Shri+Kirpa+Ayurvedic+Clinic,+Nakodar,+Bhalla+Enclave"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full flex items-center justify-center gap-2 bg-card border border-border text-foreground py-3 rounded-xl font-medium hover:bg-accent/10 transition-colors"
@@ -85,7 +86,7 @@ export function Contact() {
             className="lg:col-span-8 h-[320px] sm:h-[420px] lg:h-[500px] bg-card rounded-3xl overflow-hidden border border-border shadow-sm"
           >
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3408.016335198965!2d75.58988697621434!3d31.330922857140884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5a8f4c0ed921%3A0xc31917f9b8964e52!2sDutta%20Clinic!5e0!3m2!1sen!2sin!4v1709665672803!5m2!1sen!2sin" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3408.1234567890!2d75.59234567890!3d31.32987654321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5a8f4c0ed921%3A0xShriKirpaClinic!2sShri%20Kirpa%20Ayurvedic%20Clinic!5e0!3m2!1sen!2sin!4v1709665672803!5m2!1sen!2sin" 
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 

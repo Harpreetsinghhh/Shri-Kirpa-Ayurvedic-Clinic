@@ -57,26 +57,28 @@ export function Footer() {
           <div>
             <h4 className="font-serif text-lg mb-6 border-b border-background/20 pb-2 inline-block">Contact Info</h4>
             <ul className="space-y-4 text-sm text-background/70">
-              <li>Dutta Clinic, Chowk Kishanpura,<br/>Jalandhar, Punjab 144008</li>
-              <li><a href="tel:+919872870081" className="hover:text-primary transition-colors">+91 9872870081</a></li>
-              <li>info@duttaayurveda.com</li>
+              <li>4FMM+768, near dominick Pizza,<br/>inside Bhalla Enclave Jalandhar,<br/>Bypass Rd, Nakodar, Punjab 144040</li>
+              <li><a href="tel:+919877892649" className="hover:text-primary transition-colors">+91 9877892649</a></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-serif text-lg mb-6 border-b border-background/20 pb-2 inline-block">Working Hours</h4>
             <ul className="space-y-3 text-sm text-background/70">
-              <li className="flex justify-between"><span>Sunday</span> <span>12:00 AM – 12:30 PM</span></li>
-              <li className="flex justify-between"><span>Monday</span> <span>8:30 AM – 12:00 AM</span></li>
-              <li className="flex justify-between"><span>Tue–Sat</span> <span>Open 24 Hours</span></li>
-              <li className="pt-2 text-accent italic">Lunch Break: 1:00 PM – 5:00 PM Everyday</li>
+              <li className="flex justify-between"><span>Monday</span> <span>10:00 AM – 2:00 PM</span></li>
+              <li className="flex justify-between"><span>Tuesday</span> <span>10:00 AM – 2:00 PM</span></li>
+              <li className="flex justify-between"><span>Wednesday</span> <span>10:00 AM – 2:00 PM</span></li>
+              <li className="flex justify-between"><span>Thursday</span> <span>10:00 AM – 2:00 PM</span></li>
+              <li className="flex justify-between"><span>Friday</span> <span>10:00 AM – 2:00 PM</span></li>
+              <li className="flex justify-between"><span>Saturday</span> <span>10:00 AM – 2:00 PM</span></li>
+              <li className="flex justify-between"><span>Sunday</span> <span className="text-red-400">Closed</span></li>
             </ul>
           </div>
 
         </div>
 
         <div className="border-t border-background/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-background/50 text-center md:text-left">
-          <p>&copy; {currentYear} Dutta Ayurveda Clinic. All rights reserved.</p>
+          <p>&copy; {currentYear} Shri Kirpa Ayurvedic Clinic. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>

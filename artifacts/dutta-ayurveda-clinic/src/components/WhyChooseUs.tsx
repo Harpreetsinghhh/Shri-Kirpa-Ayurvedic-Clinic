@@ -25,7 +25,7 @@ export function WhyChooseUs() {
             >
               <h2 className="text-4xl lg:text-5xl font-serif mb-6 leading-tight">
                 Why Choose <br/>
-                <span className="italic text-primary">Dutta Ayurveda?</span>
+                <span className="italic text-primary">Shri Kirpa Ayurvedic?</span>
               </h2>
               <p className="text-lg text-muted-foreground mb-12">
                 We bridge the gap between traditional Ayurvedic wisdom and clinical excellence, providing a sanctuary where true healing begins.

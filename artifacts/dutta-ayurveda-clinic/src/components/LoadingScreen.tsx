@@ -39,7 +39,7 @@ export function LoadingScreen({ onComplete }: { onComplete: () => void }) {
           </motion.div>
           
           <h1 className="text-2xl md:text-3xl font-serif text-primary mb-8 text-center">
-            Dutta Ayurveda Clinic
+            Shri Kirpa Ayurvedic Clinic
           </h1>
 
           <div className="w-full h-[1px] bg-primary/20 overflow-hidden relative">

@@ -13,7 +13,7 @@ const testimonials = [
   {
     name: "Rajesh Kumar",
     condition: "Stress & Insomnia",
-    text: "The Shirodhara treatments helped me manage my work stress and sleep better. It's a true sanctuary of peace. Highly recommend Dutta Ayurveda Clinic.",
+    text: "The Shirodhara treatments helped me manage my work stress and sleep better. It's a true sanctuary of peace. Highly recommend Shri Kirpa Ayurvedic Clinic.",
     avatar: "/avatar-2.jpg"
   },
   {

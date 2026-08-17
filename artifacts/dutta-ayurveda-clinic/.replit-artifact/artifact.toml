@@ -1,6 +1,6 @@
 kind = "web"
 previewPath = "/"
-title = "Dutta Ayurveda Clinic"
+title = "Shri Kirpa Ayurvedic Clinic"
 version = "1.0.0"
 id = "artifacts/dutta-ayurveda-clinic"
 router = "path"

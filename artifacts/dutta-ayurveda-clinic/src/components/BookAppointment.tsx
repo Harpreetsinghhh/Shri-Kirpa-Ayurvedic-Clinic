@@ -70,10 +70,8 @@ export function BookAppointment() {
                   <Clock className="mt-1 text-accent" size={20} />
                   <div>
                     <h5 className="font-medium text-lg">Opening Hours</h5>
-                    <p className="text-sm text-primary-foreground/70 mt-1">Sun: 12:00 AM – 12:30 PM</p>
-                    <p className="text-sm text-primary-foreground/70">Mon: 8:30 AM – 12:00 AM</p>
-                    <p className="text-sm text-primary-foreground/70">Tue–Sat: Open 24 Hours</p>
-                    <p className="text-xs font-mono uppercase mt-2 text-accent">Lunch Break: 1PM - 5PM</p>
+                    <p className="text-sm text-primary-foreground/70 mt-1">Mon–Sat: 10:00 AM – 2:00 PM</p>
+                    <p className="text-sm text-primary-foreground/70">Sunday: Closed</p>
                   </div>
                 </div>
               </div>
