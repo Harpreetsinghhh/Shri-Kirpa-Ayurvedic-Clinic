@@ -1,5 +1,5 @@
 [build]
-  command = "pnpm install && pnpm --filter @workspace/shri-kirpa-ayurvedic-clinic run build"
+  command = "pnpm install && pnpm --filter @workspace/artifacts/shri-kirpa-ayurvedic-clinic run build"
   publish = "artifacts/shri-kirpa-ayurvedic-clinic/dist/public"
 
 [build.environment]
