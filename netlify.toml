@@ -1,6 +1,6 @@
 [build]
-  command = "pnpm install && pnpm --filter @workspace/artifacts/shri-kirpa-ayurvedic-clinic run build"
-  publish = "artifacts/shri-kirpa-ayurvedic-clinic/public"
+  command = "pnpm install && pnpm --filter @workspace run build"
+  publish = "artifacts/shri-kirpa-ayurvedic-clinic/dist/public"
 
 [build.environment]
   NODE_VERSION = "22"
