@@ -6,7 +6,7 @@ const stats = [
   { value: 15, suffix: '+', label: 'Years Experience' },
   { value: 1000, suffix: '+', label: 'Happy Patients' },
   { value: 93, suffix: '+', label: 'Google Reviews' },
-  { value: 4.7, suffix: '★', label: 'Average Rating', decimals: 1 },
+  { value: 4.8, suffix: '★', label: 'Average Rating', decimals: 1 },
 ];
 
 export function Statistics() {
