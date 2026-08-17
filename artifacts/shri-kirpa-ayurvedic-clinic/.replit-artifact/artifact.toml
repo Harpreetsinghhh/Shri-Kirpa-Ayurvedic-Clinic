@@ -2,7 +2,7 @@ kind = "web"
 previewPath = "/"
 title = "Shri Kirpa Ayurvedic Clinic"
 version = "1.0.0"
-id = "artifacts/dutta-ayurveda-clinic"
+id = "artifacts/shri-kirpa-ayurvedic-clinic"
 router = "path"
 
 [[services]]
@@ -11,12 +11,12 @@ paths = [ "/" ]
 localPort = 24897
 
 [services.development]
-run = "pnpm --filter @workspace/dutta-ayurveda-clinic run dev"
+run = "pnpm --filter @workspace/shri-kirpa-ayurvedic-clinic run dev"
 
 [services.production]
-build = [ "pnpm", "--filter", "@workspace/dutta-ayurveda-clinic", "run", "build" ]
+build = [ "pnpm", "--filter", "@workspace/shri-kirpa-ayurvedic-clinic", "run", "build" ]
 serve = "static"
-publicDir = "artifacts/dutta-ayurveda-clinic/dist/public"
+publicDir = "artifacts/shri-kirpa-ayurvedic-clinic/dist/public"
 
 [[services.production.rewrites]]
 from = "/*"
