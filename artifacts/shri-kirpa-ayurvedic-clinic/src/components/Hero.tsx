@@ -1,5 +1,5 @@
 import { Component, useEffect, useRef, useState, type ReactNode } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Phone, ArrowRight, Leaf } from 'lucide-react';
 import * as THREE from 'three';
@@ -154,9 +154,6 @@ function Blob() {
 }
 
 export function Hero() {
-  const { scrollY } = useScroll();
-  const y = useTransform(scrollY, [0, 1000], [0, 300]);
-  const opacity = useTransform(scrollY, [0, 500], [1, 0]);
   const [webglSupported, setWebglSupported] = useState(false);
 
   useEffect(() => {
@@ -190,7 +187,9 @@ export function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 lg:gap-20 items-center">
           
           <motion.div 
-            style={{ y, opacity }}
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: 'easeOut' }}
             className="flex flex-col items-start text-left"
           >
             <motion.div

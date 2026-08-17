@@ -11,7 +11,7 @@ export function About() {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.6, rootMargin: '0px 0px -10% 0px' }}
             transition={{ duration: 0.7, ease: "easeOut" }}
             className="relative order-2 lg:order-1"
           >
@@ -26,10 +26,10 @@ export function About() {
             
             {/* Experience Badge */}
             <motion.div 
-              initial={{ scale: 0 }}
-              whileInView={{ scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.5, duration: 0.6, type: "spring" }}
+              initial={{ scale: 0.8, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              viewport={{ once: true, amount: 0.8, rootMargin: '0px 0px -10% 0px' }}
+              transition={{ delay: 0.2, duration: 0.5, type: "spring" }}
               className="absolute -bottom-6 -right-4 sm:-bottom-8 sm:-right-8 lg:bottom-12 lg:-right-12 bg-primary text-primary-foreground p-5 sm:p-8 rounded-full w-28 h-28 sm:w-36 sm:h-36 lg:w-40 lg:h-40 flex flex-col items-center justify-center text-center shadow-xl border-4 border-background"
             >
               <span className="text-4xl font-serif font-bold mb-1">15+</span>
@@ -42,7 +42,7 @@ export function About() {
             <motion.div
               initial={{ opacity: 0, y: 18 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.25 }}
+              viewport={{ once: true, amount: 0.6, rootMargin: '0px 0px -12% 0px' }}
               transition={{ duration: 0.6, ease: "easeOut" }}
             >
               <div className="flex items-center gap-3 mb-6">
