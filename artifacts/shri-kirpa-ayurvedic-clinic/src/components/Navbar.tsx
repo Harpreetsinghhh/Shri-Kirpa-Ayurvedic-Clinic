@@ -49,7 +49,7 @@ export function Navbar() {
           >
             <Leaf className="text-primary transition-transform group-hover:scale-110 duration-300" size={24} />
             <span className="font-serif text-xl font-medium tracking-wide text-foreground">
-              Dutta<span className="text-primary">.</span>
+              Shri Kirpa<span className="text-primary"> Ayurvedic Clinic</span>
             </span>
           </div>
 

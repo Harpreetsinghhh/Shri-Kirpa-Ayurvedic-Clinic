@@ -19,11 +19,11 @@ export function Footer() {
             <div className="flex items-center gap-2 mb-6">
               <Leaf className="text-primary" size={28} />
               <span className="font-serif text-2xl font-medium tracking-wide">
-                Dutta<span className="text-primary">.</span>
+                Shri Kirpa<span className="text-primary"> Ayurvedic Clinic</span>
               </span>
             </div>
             <p className="text-background/60 text-sm leading-relaxed mb-6">
-              An internationally-caliber wellness brand treating Ayurveda as a refined, modern discipline. Healing naturally, living better.
+              Authentic Ayurvedic care rooted in tradition, tailored for modern wellness. Healing naturally, living better.
             </p>
             <div className="flex gap-4">
               <a href="#" className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors text-background">
@@ -57,7 +57,7 @@ export function Footer() {
           <div>
             <h4 className="font-serif text-lg mb-6 border-b border-background/20 pb-2 inline-block">Contact Info</h4>
             <ul className="space-y-4 text-sm text-background/70">
-              <li>4FMM+768, near dominick Pizza,<br/>inside Bhalla Enclave Jalandhar,<br/>Bypass Rd, Nakodar, Punjab 144040</li>
+              <li>4FMM+768, near Dominick Pizza,<br/>inside Bhalla Enclave Jalandhar,<br/>Bypass Rd, Nakodar, Punjab 144040</li>
               <li><a href="tel:+919877892649" className="hover:text-primary transition-colors">+91 9877892649</a></li>
             </ul>
           </div>

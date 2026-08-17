@@ -31,7 +31,7 @@ export function Contact() {
                   <div>
                     <h4 className="font-medium text-foreground mb-1">Address</h4>
                     <p className="text-muted-foreground text-sm leading-relaxed">
-                      4FMM+768, near dominick Pizza,<br/>
+                      4FMM+768, near Dominick Pizza,<br/>
                       inside Bhalla Enclave Jalandhar,<br/>
                       Bypass Rd, Nakodar, Punjab 144040
                     </p>
@@ -67,7 +67,7 @@ export function Contact() {
                   <MessageCircle size={18} /> WhatsApp
                 </a>
                 <a 
-                  href="https://maps.google.com/?q=Shri+Kirpa+Ayurvedic+Clinic,+Nakodar,+Bhalla+Enclave"
+                  href="https://maps.google.com/?q=4FMM%2B768%2C%20near%20Dominick%20Pizza%2C%20inside%20Bhalla%20Enclave%20Jalandhar%2C%20Bypass%20Rd%2C%20Nakodar%2C%20Punjab%20144040"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full flex items-center justify-center gap-2 bg-card border border-border text-foreground py-3 rounded-xl font-medium hover:bg-accent/10 transition-colors"
@@ -86,7 +86,7 @@ export function Contact() {
             className="lg:col-span-8 h-[320px] sm:h-[420px] lg:h-[500px] bg-card rounded-3xl overflow-hidden border border-border shadow-sm"
           >
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3408.1234567890!2d75.59234567890!3d31.32987654321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5a8f4c0ed921%3A0xShriKirpaClinic!2sShri%20Kirpa%20Ayurvedic%20Clinic!5e0!3m2!1sen!2sin!4v1709665672803!5m2!1sen!2sin" 
+              src="https://www.google.com/maps?q=4FMM%2B768%2C%20near%20Dominick%20Pizza%2C%20inside%20Bhalla%20Enclave%20Jalandhar%2C%20Bypass%20Rd%2C%20Nakodar%2C%20Punjab%20144040&z=16&output=embed"
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 
