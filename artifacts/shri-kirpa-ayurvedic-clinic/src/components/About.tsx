@@ -9,10 +9,10 @@ export function About() {
           
           {/* Image Side */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 1, ease: "easeOut" }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
             className="relative order-2 lg:order-1"
           >
             <div className="relative aspect-square lg:aspect-[4/5] rounded-3xl overflow-hidden">
@@ -40,10 +40,10 @@ export function About() {
           {/* Text Side */}
           <div className="order-1 lg:order-2">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 18 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.8 }}
+              viewport={{ once: true, amount: 0.25 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
             >
               <div className="flex items-center gap-3 mb-6">
                 <Leaf className="text-accent" size={20} />
